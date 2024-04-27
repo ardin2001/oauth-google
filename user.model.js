@@ -8,10 +8,14 @@ const User = sequelizeConfig.define("user", {
   },
   profile: {
     type: DataTypes.STRING,
-    allowNull: false,
+    allowNull: true,
   },
   password: {
     type: DataTypes.STRING,
+    allowNull: true,
+  },
+  verified_email: {
+    type: DataTypes.BOOLEAN,
     allowNull: false,
   },
 });
